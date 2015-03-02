@@ -1,0 +1,28 @@
+Diagrammi UML prodotti
+
+1) class_diagram_servlet
+	Mostra le interfacce implementate da AgenziaServlet e le classi DAO
+
+2) class_diagram_client_auto
+3) class_diagram_client_clienti
+4) class_diagram_client_noleggio
+5) class_diagram_client_trasferimento
+	Ognuno di questi diagrammi delle classi mostra le associazioni che ci sono tra il client LOCOANFA
+	e l'interfaccia grafica (a cui si riferisce il diagramma), che sfrutta i metodi forniti della relativa interfaccia asincrona
+	e implementati da AgenziaServlet.
+
+6) class_diagram_entities
+	Mostra le associazioni tra le entità del domain model
+
+7) new_class_diagram
+	Una nuova versione del modello di dominio che mostra le interazioni fra client e server attraverso le interfacce. Vengono inoltre mostrati i 
+	servizi rest per la comunicazione con le agenzie remote. Nel tentativo di rendere semplice la lettura del diagramma si è voluto mostrare solo
+	il package "client" senza le sue classi.
+
+8) sequence_noleggio
+9) sequence_trasferimento
+	Diagrammi di sequenza che descrivono gli step necessari per portare a termine un noleggio e un trasferimento.
+	Il diagramma di sequenza del noleggio descrive come viene effettuato un noleggio remoto (agenzia di destinazione diversa da quella di partenza),
+	quindi il noleggio locale (agenzia di destinazione uguale a quella di partenza) va considerato come un caso particolare.
+	Gli attori indicati si riferiscono all'agenzia che contattano (il dipendente che comincia un'azione su un agenzia è sempre un dipendente di
+	quella agenzia). Al fine di non complicare troppo il diagramma sono state escluse le interazioni con il database tramite le classi DAO.

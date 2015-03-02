@@ -1,0 +1,12 @@
+README
+
+INSTALLAZIONE:
+
+-Includere nelle deployed resources sia war sia webcontent. 
+-Compilare il progetto con gwt.
+-Fare il deploy su un server tomcat.
+-Avviare il server
+
+NB: il progetto contiene un file global.odb legato ad un'istanza del servlet eseguita sulla porta 8080 su localhost. Per eseguire più istanze occorre modificare il database ed in particolare l'agenzia locale.
+Si noti inoltre che nel database è presente un'agenzia non locale sulla porta 8082. È inoltre necessario sostituire la voce "agenzia" nei campi dei dipendenti. La mancata sostituzione non crea particolari
+problemi ma determina informazioni errate nella UI.

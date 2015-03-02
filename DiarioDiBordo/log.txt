@@ -1,0 +1,1029 @@
+commit 181cc2d39cba46d6b8192e87cf19cde17a3dd0cc
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jul 11 12:41:28 2013 +0200
+
+    Riaperto bug e risolto nuovamente: fine
+
+commit 859ddc61f6b4b806ee6293c60f637b9320b6625a
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jul 11 11:52:20 2013 +0200
+
+    Risolto bug di selezione delle auto da trasferire
+
+
+commit 39e3fcf05b9eae3e20fc7467e8d942e6f4e8a503
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu Jul 11 10:04:39 2013 +0200
+
+    Piccola modifica al trasferimento.
+
+commit 1358ad1fbeea22bb50136d0c8f663eb3ce93f79d
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Wed Jul 10 18:36:31 2013 +0200
+
+    Rimosso messagenotificator duplicato, risolti bug di trasferimento e rifornimento
+
+commit 1b4010df07c1568b1a5eed52cb0dbc6d0eaa0c25
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Wed Jul 10 17:34:23 2013 +0200
+
+    Corretto typo nel package "entities"
+
+commit e07da8575f0ebfc34865fbc576487427b304bc97
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Wed Jul 10 13:47:20 2013 +0200
+
+    Aggiunti controlli sui campi
+
+commit dc0e0d59f996e09a50952ddea69676da44b806d0
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Wed Jul 10 12:31:07 2013 +0200
+
+    Aggiunto tema grafico
+
+commit cee61e90e10c9ac283d494a4ea4ead024af46307
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Wed Jul 10 12:07:33 2013 +0200
+
+    Risistemata grafica e notifiche
+
+commit 78760d84e3dd1094413c23759669cc7dea9d8a93
+Author: antonello antonacci <antoanto90@gmail.com>
+Date:   Wed Jul 10 10:57:58 2013 +0200
+
+    Modifica Trasferimento per test
+
+commit 6c8b5759f96ae8165f4411e5c90a06003fe59ff2
+Author: antonello antonacci <antoanto90@gmail.com>
+Date:   Wed Jul 10 10:49:52 2013 +0200
+
+    Implementati test
+
+commit 1e90eccc4e3b7c27a1c4c36b436718487dae50e1
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jul 9 14:19:47 2013 +0200
+
+    Modificata struttura package e ri-creato db
+
+commit d16b9dff645a5d84a4fd02ef7fac5e5c705dca22
+Merge: 8cb6f2b 3e06278
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 12:45:14 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit 8cb6f2b1978dad317ea679ff363f54e6557e2651
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 12:43:59 2013 +0200
+
+    Aggiunte notifiche
+
+commit 3e0627859bb502e66964fe993fc8096627396d6c
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jul 9 11:52:42 2013 +0200
+
+    Migliore organizzazione dei package
+
+commit 335e413fc5724f4cbde5f60cdb0e869eb1b373f3
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jul 9 11:24:22 2013 +0200
+
+    Merge finito
+
+commit 098d8d9d2bde14d48e86d735203944108676b184
+Merge: 649adef 4f349ae
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 11:14:36 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+    
+    Conflicts:
+        .gwt/.gwt-log
+        src/com/project/ronf/client/GridWidget.java
+        src/com/project/ronf/client/InterfacciaAuto.java
+        src/com/project/ronf/client/InterfacciaClienti.java
+        src/com/project/ronf/client/InterfacciaNoleggio.java
+        src/com/project/ronf/client/InterfacciaTrasferimento.java
+        src/com/project/ronf/client/SincronizzatoreDati.java
+        src/com/project/ronf/server/rest/TrasferimentiRest.java
+        war/locoanfa/locoanfa.nocache.js
+
+commit 649adef12b781140d855980c4dd7a601a028fe0d
+Merge: f5f5060 29f18cb
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 10:52:48 2013 +0200
+
+    Merge branch 'raffaele': Sistemata UI
+
+commit 29f18cbde2a49a74865cfe2581bd1445248bfb7e
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 10:52:20 2013 +0200
+
+    Piccole modifiche UI
+
+commit 75541694356835f571fcda9883ca84f350e60436
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jul 9 10:39:09 2013 +0200
+
+    Modificato CSS del tema di default
+
+commit 93717db697d5341c7bfde707d841d5c58b45c684
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jul 8 21:27:33 2013 +0200
+
+    Migliorata grafica del notificator
+
+commit cf385d75adcbffcb26315e415c76d7513cb1f0b0
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jul 8 19:39:18 2013 +0200
+
+    implementato MessageNotificator con timeout e onclick per la chiusura
+
+commit 5f9afe6fa41fe58e324a1ddcaa42c538b9593725
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jul 8 18:45:15 2013 +0200
+
+    Modifica notificator
+
+commit f8a52626c7db232b2b3425ef587f05f069b0d5ab
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jul 8 18:44:32 2013 +0200
+
+    Creazione del message notificator
+
+commit 4f349ae2e89eccbd87bcf00b1df6a79b1f192b4a
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jul 8 14:18:03 2013 +0200
+
+    Migliorata gestione db sia locale che remoto
+
+commit c7428517c4efa298faab06468d19864790cf9f7b
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sat Jul 6 15:49:40 2013 +0200
+
+    Implementata la gestione del "recupero" dei clienti eliminati durante il noleggio
+
+commit 036c30c167b1f1c62a98799daa92304b06d5e2f4
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sat Jul 6 15:25:29 2013 +0200
+
+    Ora pare funzionare anche il noleggio remoto...
+
+commit 3d380e0a9194906ba729399eb47d9ab83ee9d61e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sat Jul 6 15:10:06 2013 +0200
+
+    Implementato db con il paradigma DAO
+
+commit 3e4841adc3a2b8a9e3a867514f7f47a12928ed09
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sat Jul 6 14:43:56 2013 +0200
+
+    Prova con DAO
+
+commit 74c3afa5da5e79eb9406ae7e405161dc25302753
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri Jul 5 11:55:23 2013 +0200
+
+    Ora funziona tutto nuovamente...
+
+commit fc3a9c24b02efc5823ec2529e8a00ae5130a0a26
+Merge: f5f5060 7998433
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri Jul 5 11:31:21 2013 +0200
+
+    Merge branch 'ashmi' into HEAD
+
+commit 7998433e7e18a259e9f55de0a886fd1e09ee626a
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri Jul 5 11:28:05 2013 +0200
+
+    Implementazione noleggio remoto funzionante
+
+commit f5f5060d0ee173cfc2b76cec3bd5f6a49c38ed69
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jul 4 15:47:24 2013 +0200
+
+    eliminata directory bin
+
+commit ec5e8d0513e6264a32bf5e4ff45fd838f7986367
+Merge: 36af882 5daae31
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jul 4 15:20:41 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit 36af882aee63c088be626d20a747c03337ffb3bd
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jul 4 15:16:12 2013 +0200
+
+    Sistemato noleggio remoto, funziona con guidatore aggiuntivo e optional
+
+commit 5daae31b482a8f44798de1045a0d8cf3b2d6fc18
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Wed Jul 3 07:33:31 2013 +0200
+
+    Ripristino parte di test ora funzionante ch eè stata cancellata
+
+commit a60fe5f74fc95fb83b89059065c509b7450cfebe
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jul 2 14:33:37 2013 +0200
+
+    Implementati trasferimenti con jersey e noleggio remoto
+
+commit 878044c4ef61728df0f2aeb80187c624fbd90400
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jul 1 15:56:33 2013 +0200
+
+    implementazione trasferimento completata
+
+commit 2064086d4946fa297930757fdfba4b5cf5243937
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jul 1 12:38:19 2013 +0200
+
+    Implementata interfaccia trasferimento (in parte)
+
+commit 8cfeca9bdc7f8e7c297b364a2b557ada79d5d432
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 14:44:45 2013 +0200
+
+    Aggiunta classe trasferimento
+
+commit 828191471138dc67ad7446b303364f606abd648f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 13:34:15 2013 +0200
+
+    Messa a posto classe auto
+
+commit 612b5828d5905de66dbf1b605bb31b4790b4f273
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 13:28:01 2013 +0200
+
+    Porta errata
+
+commit 933f418cb076002da78707632ab310fb3d760044
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 13:24:58 2013 +0200
+
+    Piccole modifiche al db
+
+commit e03e3e1ffadb6f3a0fc2d563a103b92ef2ed687c
+Merge: b299fa4 66ef2b4
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 13:16:54 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+    
+    Conflicts:
+        src/com/project/ronf/server/AgenziaServlet.java
+        src/com/project/ronf/server/rest/TrasferimentiRest.java
+        war/WEB-INF/db/global.odb
+        war/WEB-INF/db/global.odb$
+        war/locoanfa/locoanfa.nocache.js
+
+commit b299fa4e08ed390d27b62227b893c6f926b5ea6e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sun Jun 30 13:10:31 2013 +0200
+
+    Implementata richiesta trasferimento
+
+commit 66ef2b47532201648b184e4861f3cc871f27fa63
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Sun Jun 30 13:02:18 2013 +0200
+
+    implementato servizio requestAuto: cerca un'auto in base alla targa, se c'è la rimuove dal db remoto e restituisce un XML, altrimenti error 404
+
+commit 8fe6d8fd7259d4767c2b7b9f6b379b875cb18226
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Sun Jun 30 12:46:42 2013 +0200
+
+    url case sensitive, modificato in AgenziaServlet
+
+commit 8a1eedcb17c799a760f1899e89fef41fca8c8458
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Sat Jun 29 12:07:21 2013 +0200
+
+    Implementati i primi due servizi REST jersey, uno di prova (LOCOANFA/rest/prova/POST) che stampa il suo formparam, uno che restituisce le auto in xml(LOCOANFA/rest/prova/a
+    Mi ha incasinato il repo git quindi ho fatto un po di aggiunte/rimozioni. Spero vi funga...
+
+commit f300d8e41d304b0c4eb2fea2e17c1eace8adf073
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 24 18:44:22 2013 +0200
+
+    Modificato database, ora dovrebbe funzionare tutto
+
+commit 3e4fb8cf33da69cb46c8ef63ec7a1d903eb8dc2f
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu Jun 20 23:04:50 2013 +0200
+
+    Inserita cartella test con primo abbozzo test su funzione calcola prezzo
+
+commit 9c723e8e32b7a15d10a048b0ffb1539065c799f3
+Merge: 7c5c2ce 57d4fba
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu Jun 20 12:35:42 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+    
+    Conflicts:
+        war/WEB-INF/db/global.odb
+
+commit 7c5c2ce223b45b803a2e2de480456e1560410758
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu Jun 20 12:32:47 2013 +0200
+
+    Richiesta auto lato client
+
+commit 57d4fba69f252dfa48183625a18243ec05bf3585
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Wed Jun 19 11:27:32 2013 +0200
+
+    assegnati KeyDownHandler ai campi di login: ora è possibile loggarsi semplicemente premendo invio dopo aver completato i campi
+
+commit 28ecd27c24544e460d47ad193032f603933cbece
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Wed Jun 19 10:58:53 2013 +0200
+
+    Sistemato bottone Annulla in interfaccia noleggio
+
+commit fc3c45798a0d527412066b7200c5ccc7cd3149d7
+Merge: 25b9e0b b495815
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jun 18 13:29:59 2013 +0200
+
+    Merge branch 'raffaele'
+    
+    Conflicts:
+        src/com/project/ronf/client/InterfacciaNoleggio.java
+        war/WEB-INF/db/global.odb
+
+commit 25b9e0b8928498fb30b8d976de5ae2ff7dde3d9a
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 18 13:10:17 2013 +0200
+
+    Fixati bug gadget e modificata gestione guidatori aggiuntivi (sono in una lista di clienti separata)
+
+commit b495815f8f91821bc95ac1882519c1b3100e241d
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jun 18 13:04:32 2013 +0200
+
+    Sistemati bottoni Annulla delle varie interfacce del frontoffice
+
+commit a09774f4c62aea45244620bdbd1dc42ad3ad5a9d
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 18 11:57:48 2013 +0200
+
+    Implementati optional(s) nella creazione noleggio
+
+commit 5540faf817b130c598135836c8a255b910799f41
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 17 13:16:04 2013 +0200
+
+    Aggiunta gestione optional, inizio modifiche al form di noleggio
+
+commit c858147338dfe9536ce7ae71e853f93204f83519
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri Jun 14 12:25:47 2013 +0200
+
+    Risolti bug prezzo, calcolo corretto
+
+commit d48f8468794e1f063b98484d6dfc62176a9e5b56
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu Jun 13 13:25:59 2013 +0200
+
+    Implementato (inizio) tabella prezzo
+
+commit d9a3f426721b1af022b577e72650bb2f0e8a076f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu Jun 13 12:21:19 2013 +0200
+
+    Migliori filtri noleggio a seconda del dipendente
+
+commit ddbc9b2c2ae80b9c39869527c060de2a025030b2
+Author: antonello antonacci <antoanto90@gmail.com>
+Date:   Wed Jun 12 13:40:20 2013 +0200
+
+    Aggiunto tasto rifornimento
+
+commit 40c0bab92588d1090a7fd4849736fe5f84b61395
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 11 13:51:47 2013 +0200
+
+    Inmplementato rifornimento
+
+commit c5fe68a3b9690a7f223cb67a7c9868c912ec4605
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 11 12:27:03 2013 +0200
+
+    Implementato il tipo auto come indice statico
+
+commit 9654fd35887849ea6cf1c24180cd838ea9f63a72
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri Jun 7 13:48:05 2013 +0200
+
+    aggiunta classe Rifornimento, aggiunta/rimozione auto da database in seguito a inizio/fine Noleggio
+
+commit 72fcb6c9c93c46cff4bb6d35ee40fd9fb1a9fff9
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri Jun 7 12:10:47 2013 +0200
+
+    Controlli su eliminazione cliente: cliente eliminabile solo se non ci sono noleggi pendenti
+
+commit 2502eed00120b921f537334647281ad87e30822d
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu Jun 6 13:54:07 2013 +0200
+
+    Aggiunta funzione di rimozione Clienti e Noleggi
+    TODO: controllare se il cliente ha noleggi attivi prima dell'eliminazione
+
+commit 1ca7b0e00923d6f2bfd430264631b6679310c712
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jun 4 14:54:30 2013 +0200
+
+    solo spazi
+
+commit 5acd6b9e85467ae31d7c288a2f70e071495168cf
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 4 13:14:17 2013 +0200
+
+    Griglie con pager
+
+commit 252dc1ae60456d8423b03bb89ab6a54a77da7d3f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 4 12:51:29 2013 +0200
+
+    Griglia con pager
+
+commit d4c2c961fe5265277aac32e17d63fd63f705ca21
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue Jun 4 11:47:44 2013 +0200
+
+    SincronizzatoreDati per la popolamento e gestione dati e aggiornamento
+
+commit 26dcb65143f2e0cfd25ced7643333c371aff5b74
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue Jun 4 10:31:31 2013 +0200
+
+    altre modifiche noleggio
+
+commit 0d2e00ee25e339733b4bc7d0111ccec07ff26bd0
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jun 3 15:41:13 2013 +0200
+
+    migliorata interfaccia noleggio
+
+commit 5df51f6d718976084ef43e4eda84e75c457a0051
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 3 12:34:03 2013 +0200
+
+    FIxato bug submit noleggio
+
+commit 9d7a3d0a13316f42d0dab13c9482ba6f4e39f50b
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jun 3 12:25:54 2013 +0200
+
+    implementazione noleggio
+
+commit 3f18e25f4430e2f12042aebec5ec3f6495983dea
+Merge: e6c9d50 ae3e45c
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 3 12:03:54 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit e6c9d50f396f17f653ea0a7820075f69b790eb69
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 3 12:03:21 2013 +0200
+
+    Re added database
+
+commit ae3e45c4ef0d21ff0eb8aca8403a96d9739bc64b
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jun 3 12:03:05 2013 +0200
+
+    migliorata tendina auto
+
+commit 2f61e25a372ac3f50ff8af756f997c30bc348c29
+Merge: ca2ffff ae52ce6
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 3 11:54:34 2013 +0200
+
+    Merge branch 'bugfixgrid'
+    
+    Conflicts:
+        war/WEB-INF/db/global.odb
+        war/WEB-INF/db/global.odb$
+
+commit ae52ce6539eb09c70b6ea51ceacf457889568180
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon Jun 3 11:51:32 2013 +0200
+
+    Bugfix per la griglia, metodo update()
+
+commit ca2ffffa51245f477004fa11242b40ffdfa768a1
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon Jun 3 11:50:39 2013 +0200
+
+    modifica suggstbox clienti in noleggio
+
+commit 31fcc818f0e98c5422f7551f845fbbc3d24cac29
+Merge: c30c925 453272a
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri May 31 16:53:10 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit c30c925f9ba532e3cb0bd74016249ceae6a5bc30
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri May 31 16:52:09 2013 +0200
+
+    funzionante
+
+commit 453272a12d6fb71b3100dde1273d29449d02e95d
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 31 15:21:33 2013 +0200
+
+    Modificato file jdoconfig.xml che creava problemi in fase di
+    compilazione e validazione
+
+commit 8a7de665db2663768570cec4b6c9b1048ed030d1
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:49:45 2013 +0200
+
+    Fixata interfaccia gestioneclienti
+
+commit 02127b15ef2af0ad75f913abdc2b23b16dc10cd8
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:45:55 2013 +0200
+
+    Removed conflicting files
+
+commit 3fb5264756d1aa3aeeb6721add06216e6548f511
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:43:31 2013 +0200
+
+    Added interfacce
+
+commit 9814b9c9d2a3f08a67da9fbcb0a121542e9216a4
+Merge: a330917 9e0d4c3
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:42:07 2013 +0200
+
+    Merge branch 'griglie'
+    
+    Conflicts:
+        src/com/project/ronf/client/InterfacciaAuto.java
+        src/com/project/ronf/client/InterfacciaClienti.java
+        src/com/project/ronf/server/AgenziaServlet.java
+        src/com/project/ronf/shared/Agenzia.java
+        war/WEB-INF/classes/com/project/ronf/client/GestioneAuto.class
+        war/WEB-INF/classes/com/project/ronf/client/GestioneAutoAsync.class
+        war/WEB-INF/classes/com/project/ronf/client/InterfacciaAuto.class
+        war/WEB-INF/classes/com/project/ronf/client/InterfacciaClienti.class
+        war/WEB-INF/classes/com/project/ronf/client/InterfacciaNoleggio$AutoClickHandler.class
+        war/WEB-INF/classes/com/project/ronf/client/InterfacciaNoleggio.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$1.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$LoginButtonHandler$1.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$LoginButtonHandler.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$LogoutButtonHandler$1.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$LogoutButtonHandler.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA$NavButtonHandler.class
+        war/WEB-INF/classes/com/project/ronf/client/LOCOANFA.class
+        war/WEB-INF/classes/com/project/ronf/server/AgenziaServlet.class
+        war/WEB-INF/classes/com/project/ronf/server/ObDatabase.class
+        war/WEB-INF/classes/com/project/ronf/shared/Agenzia.class
+        war/WEB-INF/classes/com/project/ronf/shared/Cliente.class
+        war/WEB-INF/classes/com/project/ronf/shared/Noleggio.class
+        war/WEB-INF/db/global.odb
+        war/WEB-INF/db/global.odb$
+        war/WEB-INF/log/odb20130531.log
+        war/WEB-INF/web.xml
+
+commit a33091793c165a5ce832dd3a3993ee500c79b5a0
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri May 31 13:26:15 2013 +0200
+
+    creata suggestBox per scegliere clienti nell'interfaccia noleggio
+
+commit 9e0d4c31f2bd2ab095f55be33552c0d87e88ab5e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:25:52 2013 +0200
+
+    Added war
+
+commit 1caca1198d5c81c631843895d69c49da2802ef0f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 31 13:16:31 2013 +0200
+
+    Griglie per noleggi, auto, clienti
+
+commit b0448e34209cba27551d80270641a141fa539233
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri May 31 13:05:17 2013 +0200
+
+    Aggiunta interfaccia di registrazione auto e registrazione cliente;
+    creato metodo registraAuto() in GestioneAuto class
+
+commit c0d44b37777d9d154f1993e6563532e98e7b5947
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Fri May 31 11:23:55 2013 +0200
+
+    sistemata getAgenzie();
+    creata interface GestioneCliente
+
+commit 033c7cea122672af3e7de111ea262ba6c96175c7
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 17:12:38 2013 +0200
+
+    interfaccia frontoffice migliorata
+    problemi: database restituisce null su query agenzie
+
+commit 3a84e5f49a2242cbd2f30a7f25f4ba9974cc0e35
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 14:46:36 2013 +0200
+
+    aggiornato db
+
+commit a8e83799557c9beee1dd146d521dc824be201a2d
+Merge: d2fda93 2d1de61
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu May 30 14:26:03 2013 +0200
+
+    Merged elena into master
+
+commit 2d1de61e0ff949e505affdae0ca54d62ab152692
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu May 30 14:19:51 2013 +0200
+
+    Inserimento metodo per richiedere lista delle agenzie
+
+commit d2fda9304b5b41a1baa162153322e70df8ed9d94
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 13:56:45 2013 +0200
+
+    bozza interfaccia frontoffice
+
+commit fe3764b41ae84793156d79de73ef261801a50ed0
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 10:57:03 2013 +0200
+
+    add db
+
+commit 59a7e87b00e7b42cafdd3d21bf9f0e4b100f8a99
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 10:31:48 2013 +0200
+
+    eliminati radiobutton inutili nel login
+
+commit 55424da4d159aaff0b599216cb472fba652f5557
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Thu May 30 10:26:39 2013 +0200
+
+    login sistemato: in caso di username e/o password errate, ricarica la pagina di login
+
+commit 012effdbbf96898be13d26af85c15b9b92707672
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 28 13:18:50 2013 +0200
+
+    Ri-implementato login con cookie e logout
+
+commit 84a35f69c4170e838d28a184a531c4424e7e34e1
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 28 12:43:10 2013 +0200
+
+    fungw2
+
+commit 75f133bb9356aaaf96ce6f601b118b3d3b89a0b2
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 28 12:27:22 2013 +0200
+
+    Funzia prima implementazione login
+
+commit ee433b276f7eba12977956da44cdf6412aefb288
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue May 28 10:50:47 2013 +0200
+
+    copiato LOCOANFA.java
+
+commit 56c0751ddbabc1be0829eb2f5cf21b5218ee736c
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue May 28 10:45:35 2013 +0200
+
+    add src
+
+commit 1c718e47f306e6d3c5bc7af012346e4d1ec2dc40
+Merge: c2c3d13 df57306
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue May 28 10:41:19 2013 +0200
+
+    Merge branch 'raffaele'
+    
+    Conflicts:
+        src/com/project/ronf/client/LOCOANFA.java
+
+commit df57306393131a5993bb1ff0f65c7263fd1d0d57
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Tue May 28 10:32:24 2013 +0200
+
+    piccole modifiche
+
+commit 58343709d3cb4bf67565365f42c997bb3984de9f
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 18:00:25 2013 +0200
+
+    ulteriori modifiche all'interfaccia di base
+
+commit 6c374ec46144da94e9a54b05100460bd938acb1b
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 17:07:02 2013 +0200
+
+    rimozione codice ripetuto
+
+commit 1087a7826017bd4d845f18d2eb14aa2f55131615
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 16:48:59 2013 +0200
+
+    completata bozza UIFrontOffice e UITransfer
+
+commit be4019eef54c19a3189b46d7e3b003ae7bec1963
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 16:19:48 2013 +0200
+
+    prima bozza di admin UI
+
+commit 2655a1748c59aa9e2570cb3422fef00f572aed24
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 14:55:30 2013 +0200
+
+    creata intefaccia di login
+
+commit c2c3d13f5093fba2a0dd1f669d16ad3afbfeed8c
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 27 13:08:50 2013 +0200
+
+    Implementazione interface gestione auto e noleggi (tramite ServletAgenzia)
+
+commit 1f1379c8853d07b362b3f95875dc2a81bbc2bacd
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 27 12:50:56 2013 +0200
+
+    Creata logica login e noleggi
+
+commit 9ff480919556c1ae2509f521113f4ec78197b9f7
+Author: Raffaele Lovino <raffaele.lovino@studio.unibo.it>
+Date:   Mon May 27 12:26:02 2013 +0200
+
+    creato branch per UI
+
+commit b0d7e4feaa6274360936420c8c310fa973c7faf4
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 23 13:24:26 2013 +0200
+
+    Aggiunta libreria bcrypt, aggiunto dipendente front office
+
+commit 70096f26d6e0c454f85b3c473221f02d36d27adc
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 23 11:11:10 2013 +0200
+
+    Login con sessione(cookie)
+
+commit b2f46d0cb4c1511872313bed8dc7c789b7ec6ca9
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Wed May 22 13:19:44 2013 +0200
+
+    Database funge (pare...) mo tocca metterlo apposto...
+
+commit 1067f944beb4d070b7be9b9272ff4b9a30360ab6
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 20 17:38:19 2013 +0200
+
+    Modifiche per objectdb, ancora non funge
+
+commit 4606389dea3b26ec2bb7914dc0fc72f3fdff2e68
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 20 15:36:14 2013 +0200
+
+    dbService creati
+
+commit 0612e980290088080e7c55b1322dc50937d08514
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 20 15:21:21 2013 +0200
+
+    Working communication
+
+commit a55916487fc9b2d2963b1388de8e8a36d9d97bcb
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 20 14:57:47 2013 +0200
+
+    Funge, errori con il server
+
+commit b0f306e2cc5c1c2dc15568adc2e57624c6533de9
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 15:43:44 2013 +0200
+
+    Classes added
+
+commit 4111453896eb9b0162add9bc72f5504251c387ac
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 17 15:36:27 2013 +0200
+
+    Finita Implementazione login cookies
+
+commit 808f8cf476ef81a2415b5e37d312e8bdc6c37bc9
+Merge: 438b219 3e2e55e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 15:23:19 2013 +0200
+
+    Merge branch 'ashmi'
+
+commit 3e2e55e08f323228ac053dc8e3acbdd7e84cd35e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 15:22:43 2013 +0200
+
+    Modificate interfacce server
+
+commit 438b219d5f5da7c99fc52014ef8151f4bde9c6eb
+Merge: c4d313d a5c9297
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 17 15:20:33 2013 +0200
+
+    Merge branch 'master' of
+    https://ellfabbri@bitbucket.org/ashmikuz/locoanfa.git
+
+commit a5c92974db385f9bcd98a20d85990012480159d4
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 17 15:20:06 2013 +0200
+
+    ALtra modifica login utente
+
+commit c4d313d65b67012c8f09189b67f165893c013610
+Merge: d7364db bf88f53
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 14:48:05 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit d7364dba0a5a0e3a014adc9b27962f4609bf0fe0
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 14:47:46 2013 +0200
+
+    Created db class
+
+commit bf88f53afceb1359e4c1a368e40270ee0ad251b5
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 17 14:35:32 2013 +0200
+
+    Ulteriore Modifica su login
+
+commit 9e3e26a1cd24d3fb6550a1ed64975c1dd001c592
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:30:50 2013 +0200
+
+    Added lib
+
+commit 27a003001ec0d796b0df9276c558431bf06bc49f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:27:43 2013 +0200
+
+    Added libs
+
+commit 8cb3fb9c2d53cff7831edf49bff03cbf06a10647
+Merge: da1069a 8984a07
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:22:28 2013 +0200
+
+    Merge branch 'ashmi'
+    
+    Conflicts:
+        war/WEB-INF/classes/com/project/ronf/client/Agenzia$1.class
+        war/WEB-INF/classes/com/project/ronf/client/Agenzia$1MyHandler.class
+        war/WEB-INF/classes/com/project/ronf/client/Agenzia.class
+        war/WEB-INF/web.xml
+
+commit da1069a663f05a5227f367056aa3dbc47b40ed54
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:21:37 2013 +0200
+
+    Aggiunti file Loginservice
+
+commit 8e22c0a7eb994fd163815e510acec18831f6a31d
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:20:29 2013 +0200
+
+    Rimossi file generati
+
+commit 8984a07dd34727df213053d09cc37ce35ea473fc
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Fri May 17 13:13:31 2013 +0200
+
+    Login service implementato (circa)
+
+commit 60059eb6834a349d16fc8c826dcbebc6751dd4ae
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Fri May 17 12:49:01 2013 +0200
+
+    Aggiunta parziale implementazione dei Cookies per login.
+
+commit 4bd66c7defb787be67395f44f5b7fd25d8ec7f1d
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu May 16 16:14:43 2013 +0200
+
+    Modifica ClassDiagram
+
+commit 690b8bedf19ceb5657f2f19db9a8816e40910178
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu May 16 15:40:36 2013 +0200
+
+    Sistemato Class Diagramm
+
+commit eed0ba808f9c0fe76371612a614096ee8ac9f129
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 16 15:13:49 2013 +0200
+
+    Password form
+
+commit 58c621e8aba996a725db9c95486c12ee51188a37
+Merge: 95ebdcb da47640
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 16 12:33:52 2013 +0200
+
+    Merge branch 'master' of https://bitbucket.org/ashmikuz/locoanfa
+
+commit 95ebdcbb64a37f460246d4c0f6eaf16785143cd6
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 16 12:32:51 2013 +0200
+
+    Modificato diagramma delle classi con sessione (controller) e vista (view)
+
+commit fcff9c5a05870a6c7a2d3db0f6134e36f7d0e498
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 14 15:53:48 2013 +0200
+
+    Piccole modifiche al server
+
+commit da476401c5d8d7fbab075e7be609759c3a477d8a
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Tue May 14 15:17:10 2013 +0200
+
+    Modificato ClassDiagram
+
+commit 37e00c1a684349e5cbae5984ca43ea23ec82a07c
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 14 15:13:10 2013 +0200
+
+    Added war folder
+
+commit dfe83740ff7c6b875159dd59039faf19c5f56e19
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 14 15:11:51 2013 +0200
+
+    Prova login
+
+commit 5112c698d2a49a5fab724dffd4d5b4e89922de21
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Tue May 14 13:05:02 2013 +0200
+
+    Libreria db4o
+
+commit a41d2ade9a955951542a15649f7c8a723d47898f
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Mon May 13 17:44:11 2013 +0200
+
+    Diagramma Classi Ricopiato
+
+commit 5a64573a91d97216793ee969843de988555d2155
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Mon May 13 17:16:03 2013 +0200
+
+    Aggiunto Diagramma Classi
+
+commit b7bf148361fcb875a79aa04e876fad2dff53b241
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 9 15:58:36 2013 +0200
+
+    Added server, agenzia
+
+commit f1667b69da3a6ba4e238f9a6cfc1980d4134450f
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Thu May 9 15:29:50 2013 +0200
+
+    Modificati nomi classi
+
+commit 18472423d8827eb8e5423aae7573f0f975701d3f
+Author: ellfabbri <lelenafabbri@gmail.com>
+Date:   Thu May 9 14:50:43 2013 +0200
+
+    Aggiunta Libreria ObjectDB e Cartella Test per risolvere errore
+
+commit eaf4580832199202995328b2881dadf1b1a00739
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 6 16:02:18 2013 +0200
+
+    Second
+
+commit 584d2dc060f9546b3d58013e283d0d10354fd47e
+Author: Michele Corazza <ashmikuz@gmail.com>
+Date:   Mon May 6 15:08:17 2013 +0200
+
+    Commit iniziale
+

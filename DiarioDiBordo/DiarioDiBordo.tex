@@ -1,0 +1,852 @@
+\documentclass[a4paper,12pt]{article} % Prepara un documento per carta A4, con un bel font grande
+ 
+\usepackage[italian]{babel} % Adatta LaTeX alle convenzioni tipografiche italiane,
+% e ridefinisce alcuni titoli in italiano, come "Capitolo" al posto di "Chapter",
+% se il vostro documento è in italiano
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
+
+\frenchspacing % forza LaTeX ad una spaziatura non inglese
+\author{Michele Corazza, Raffaele Lovino\\Antonello Antonacci, Elena Fabbri}
+\title{Diario di gruppo\\Ingegneria Del Software\\Progetto RONF}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section{Metodologia di sviluppo}
+
+Per il nostro progetto abbiamo scelto di seguire le linee guida del metodo di sviluppo agile, basandoci in particolare sull' extreme programming.\\
+Difatti ci siamo spesso divisi in due coppie in modo da poter effettuare il Pair Programming, alternandoci nella scrittura del codice e pianificando diverse riunioni tra di noi in modo da dividerci continuamente il lavoro, il tutto intervallato da periodi di testing effettuati il più parallelamente possibile con l'implementazione del progetto stesso.
+
+\section{Iterazioni}
+Durante lo sviluppo abbiamo diviso il nostro lavoro in iterazioni, partendo dalle funzioni principali per arrivare infine a soddisfare tutti i requisiti del progetto.\\
+È possibile indicare 5 iterazioni principali:
+\\
+\begin{enumerate}
+\item Costruzione Servlet e User Interface;
+\item Gestione noleggio in locale;
+\item Gestione noleggio in remoto;
+\item Gestione trasferimenti;
+\item User Interface rinnovata, gestione database DAO, organizzazione package e testing.
+\end{enumerate}
+
+\subsection{Costruzione Servlet e User Interface}
+La prima fase di sviluppo ci ha visti dividerci in due gruppi di due persone ciascuno, un gruppo ha lavorato all'implementazione del \textbf{Servlet} per la gestione della comunicazione tra client e server, l'altro allo sviluppo della \textbf{User Interface}, integrando poi i due lavori in modo da ottenre una prima versione del sistema non ancora funzionante ma già in grado di comunicare con il server e di gestire i dati provenineti da esso in maniera opportuna.La prima funzionalità implementata è stata ovviamente il \textbf{login}, con gestione dei \textbf{cookie} per la sessione e di criptazione della \textbf{password}.
+
+\subsection{Gestione noleggio locale}
+Dopo il login il lavoro si è spostato su un obiettivo che rappresenta il fulcro del progetto, cioè la \textbf{gestione del noleggio}, anche se in una prima implementazione semplificata. Questa prima versione del noleggio prevedeva la possibilità di affittare un auto dell'agenzia locale e di riportarla nella stessa, inoltre non era ancora possibile aggiungere alcun optional al noleggio.\\
+Appena terminata quest' implementazione del noleggio abbiamo provveduto a fornire la possibilità di aggiungere uno o più \textbf{optional} (seggiolini, navigatore e/o guidatori aggiuntivi), aggiungendo inoltre la possibilità di segnalare un \textbf{rifornimento} per un auto rientrata dal noleggio, da parte del gestore del parco auto dell'agenzia, ovviamente gli optional e il rifrnimento influiscono sul prezzo finale del noleggio.
+
+\subsection{Gestione noleggio remoto}
+L' obiettivo di questo ciclo iterativo è quello di offrire la possibilità di noleggiare un auto in un'agenzia e restituirla in un'altra.Abbiamo quindi implementato un servizio di comunicazione \textbf{REST} che permettesse alle varie agenzie di inviare e/o richiedere gli opportuni dati.
+
+\subsection{Gestione trasferimenti}
+In questa iterazione abbiamo implementato la richiesta, e quindi l'invio di auto da un'agenzia ad un'altra, in questo modo potenzialmente un cliente puo noleggiare da una qualunque agenzia una tra tutte le auto della compagnia. Anche in questo caso è stata implementata una comunicazione \textbf{REST} che permettesse ad un' agenzia di ottenere un elenco delle auto presenti in ogni altra agenzia e di lanciare una richiesta su una determninata auto qual'ora un cliente la richiedesse, o come da specifica se l' operatore del Front Office ritiene che sia il caso di richiederla.
+
+\subsection{User Interface rinnovata, gestione database DAO, organizzazione package e testing}
+Quest' ultima fase del progetto prevede un miglioramento dell' interfaccia, in modo da renderla molto più gradevole e più \textbf{User Friendly}, abbiamo cambiato la gestione del database secondo il paradigma \textbf{DAO} (Data Access Object), riorganizzato i package dell'intero progetto in modo da dividere il lato client da quello server e dalle risorse condivise, poi ogni package è stato a sua volta diviso in modo da ottenere una struttura ad albero che ne faciliti la comprensione.\\
+Infine è stato effettuato il testing di tutto il progetto, utilizzando dei test sulle classi condivise e sui metodi del database che sono stati implementati in maniera quanto più parallela possibile con lo sviluppo del progetto stesso.
+
+\section{Log di Bitbucket}
+Di seguito vengono riportati i log di bitbucket, tramite i quali è possibile farsi più o meno un'idea delle tempistiche per le varie iterazioni.\\ 
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 6 15:08:17 2013 \\
+\\
+    \emph{Commit iniziale}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 6 16:02:18 2013 \\
+\\
+    \emph{Second}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 9 14:50:43 2013 \\
+\\
+    \emph{Aggiunta Libreria ObjectDB e Cartella Test per risolvere errore}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 9 15:29:50 2013 \\
+\\
+    \emph{Modificati nomi classi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 9 15:58:36 2013 \\
+\\
+    \emph{Added server, agenzia}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 13 17:16:03 2013 \\
+\\
+    \emph{Aggiunto Diagramma Classi}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 13 17:44:11 2013 \\
+\\
+    \emph{Diagramma Classi Ricopiato} \\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 14 13:05:02 2013 \\
+\\
+    \emph{Libreria db4o}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 14 15:11:51 2013\\
+\\
+    \emph{Prova login}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 14 15:13:10 2013 \\
+\\
+    \emph{Added war folder}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 14 15:17:10 2013 \\
+\\
+    \emph{Modificato ClassDiagram}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 14 15:53:48 2013 \\
+\\
+    \emph{Piccole modifiche al server}
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 16 12:32:51 2013 \\
+\\
+    \emph{Modificato diagramma delle classi con sessione (controller) e vista (view)}
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 16 15:13:49 2013 \\
+\\
+    \emph{Password form}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 16 15:40:36 2013 \\
+\\
+    \emph{Sistemato Class Diagramm}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 16 16:14:43 2013 \\
+\\
+    \emph{Modifica ClassDiagram}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 12:49:01 2013 \\
+\\
+    \emph{Aggiunta parziale implementazione dei Cookies per login}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 13:13:31 2013 \\
+\\
+    \emph{Login service implementato (circa)}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 13:20:29 2013 \\
+\\
+    \emph{Rimossi file generati}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 13:21:37 2013 \\
+\\
+    \emph{Aggiunti file Loginservice}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 13:27:43 2013 \\
+\\
+    \emph{Added libs}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 13:30:50 2013 \\
+\\
+    \emph{Added lib}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 14:35:32 2013 \\
+\\
+    \emph{Ulteriore Modifica su login}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 14:47:46 2013 \\
+\\
+    \emph{Created db class}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 15:20:06 2013 \\
+\\
+    \emph{Altra modifica login utente}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 15:22:43 2013 \\
+\\
+    \emph{Modificate interfacce server}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 15:36:27 2013 \\
+\\
+    \emph{Finita Implementazione login cookies}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 17 15:43:44 2013 \\
+\\
+    \emph{Classes added}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 20 14:57:47 2013 \\
+\\
+    \emph{Funge, errori con il server}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 20 15:21:21 2013 \\
+\\
+    \emph{Working communication}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 20 15:36:14 2013 \\
+\\
+    \emph{dbService creati}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 20 17:38:19 2013 \\
+\\
+    \emph{Modifiche per objectdb, ancora non funge}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Wed May 22 13:19:44 2013 \\
+\\
+    \emph{Database funge (pare...) mo tocca metterlo apposto...}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 23 11:11:10 2013 \\
+\\
+    \textbf{Login con sessione(cookie)}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 23 13:24:26 2013 \\
+\\
+    \emph{Aggiunta libreria bcrypt, aggiunto dipendente front office}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 12:26:02 2013 \\
+\\
+    \emph{creato branch per UI}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 27 12:50:56 2013 \\
+\\
+    \emph{Creata logica login e noleggi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon May 27 13:08:50 2013 \\
+\\
+    \emph{Implementazione interface gestione auto e noleggi (tramite ServletAgenzia)}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 14:55:30 2013 \\
+\\
+    \emph{creata intefaccia di login}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 16:19:48 2013 \\
+\\
+    \emph{prima bozza di admin UI}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 16:48:59 2013 \\
+\\
+    \emph{completata bozza UIFrontOffice e UITransfer}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 17:07:02 2013 \\
+\\
+    \emph{rimozione codice ripetuto}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon May 27 18:00:25 2013 \\
+\\
+    \emph{ulteriori modifiche all'interfaccia di base}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue May 28 10:32:24 2013 \\
+\\
+    \emph{piccole modifiche}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue May 28 10:45:35 2013 \\
+\\
+    \emph{add src}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue May 28 10:50:47 2013 \\
+\\
+    \emph{copiato LOCOANFA.java}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 28 12:27:22 2013 \\
+\\
+    \emph{Funzia prima implementazione login}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 28 12:43:10 2013 \\
+\\
+    \emph{funge2}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue May 28 13:18:50 2013 \\
+\\
+    \emph{Ri-implementato login con cookie e logout}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 10:26:39 2013 \\
+\\
+    \emph{login sistemato: in caso di username e/o password errate, ricarica la pagina di login}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 10:31:48 2013 \\
+
+    \emph{eliminati radiobutton inutili nel login}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 10:57:03 2013 \\
+\\
+    \emph{add db}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 13:56:45 2013 \\
+\\
+    \emph{bozza interfaccia frontoffice}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Thu May 30 14:19:51 2013 \\
+\\
+    \emph{Inserimento metodo per richiedere lista delle agenzie}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 14:46:36 2013 \\
+\\
+    \emph{aggiornato db}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu May 30 17:12:38 2013 \\
+\\
+    \emph{interfaccia frontoffice migliorata
+    problemi: database restituisce null su query agenzie}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri May 31 11:23:55 2013 \\
+\\
+    \emph{sistemata getAgenzie();
+    creata interface GestioneCliente}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri May 31 13:05:17 2013 \\
+\\
+    \emph{Aggiunta interfaccia di registrazione auto e registrazione cliente;
+    creato metodo registraAuto() in GestioneAuto class}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 31 13:16:31 2013 \\
+\\
+    \emph{Griglie per noleggi, auto, clienti}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 31 13:25:52 2013 \\
+\\
+    \emph{Added war}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri May 31 13:26:15 2013 \\
+\\
+    \emph{creata suggestBox per scegliere clienti nell'interfaccia noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater
+\textbf{Date}:   Fri May 31 13:43:31 2013 \\
+\\
+    \emph{Added interfacce}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 31 13:45:55 2013 \\
+\\
+    \emph{Removed conflicting files}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 31 13:49:45 2013 \\
+\\
+    \emph{Fixata interfaccia gestioneclienti}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Fri May 31 15:21:33 2013 \\
+\\
+    \emph{Modificato file jdoconfig.xml che creava problemi in fase di
+    compilazione e validazione}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri May 31 16:52:09 2013 \\
+\\
+    \emph{funzionante}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jun 3 11:50:39 2013 \\
+\\
+    \emph{modifica suggstbox clienti in noleggi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jun 3 11:51:32 2013 \\
+\\
+    \emph{Bugfix per la griglia, metodo update()}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jun 3 12:03:05 2013 \\
+\\
+    \emph{migliorata tendina auto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jun 3 12:03:21 2013 \\
+\\
+    \emph{Re added database}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jun 3 12:25:54 2013 \\
+\\
+    \emph{implementazione noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jun 3 12:34:03 2013 \\
+\\
+    \emph{Fixato bug submit noleggio}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jun 3 15:41:13 2013 \\
+\\
+    \emph{migliorata interfaccia noleggio}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jun 4 10:31:31 2013 \\
+\\
+    \emph{altre modifiche noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 4 11:47:44 2013 \\
+\\
+    \emph{SincronizzatoreDati per la popolamento e gestione dati e aggiornamento}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 4 12:51:29 2013 \\
+\\
+    \emph{Griglia con pager}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 4 13:14:17 2013 \\
+\\
+    \emph{Griglie con pager}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jun 4 14:54:30 2013 \\
+\\
+    \emph{solo spazi}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu Jun 6 13:54:07 2013 \\
+\\
+    \emph{Aggiunta funzione di rimozione Clienti e Noleggi
+    TODO: controllare se il cliente ha noleggi attivi prima dell'eliminazione}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri Jun 7 12:10:47 2013 \\
+\\
+    \emph{Controlli su eliminazione cliente: cliente eliminabile solo se non ci sono noleggi pendenti}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Fri Jun 7 13:48:05 2013 \\
+\\
+    \emph{aggiunta classe Rifornimento, aggiunta/rimozione auto da database in seguito a inizio/fine Noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 11 12:27:03 2013 \\
+\\
+    \emph{Implementato il tipo auto come indice statico} \\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 11 13:51:47 2013 \\
+\\
+    \emph{Inmplementato rifornimento}\\
+\\
+\textbf{Author}: antonello antonacci \textless antoanto90@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jun 12 13:40:20 2013 \\
+\\
+    \emph{Aggiunto tasto rifornimento}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jun 13 12:21:19 2013 \\
+\\
+    \emph{Migliori filtri noleggio a seconda del dipendente}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jun 13 13:25:59 2013 \\
+\\
+    \emph{Implementato (inizio) tabella prezzo}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri Jun 14 12:25:47 2013 \\
+\\
+    \emph{Risolti bug prezzo, calcolo corretto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jun 17 13:16:04 2013 \\
+\\
+    \emph{Aggiunta gestione optional, inizio modifiche al form di noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 18 11:57:48 2013 \\
+\\
+    \emph{Implementati optional(s) nella creazione noleggio}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jun 18 13:04:32 2013 \\
+\\
+    \emph{Sistemati bottoni Annulla delle varie interfacce del frontoffi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jun 18 13:10:17 2013 \\
+\\
+    \emph{Fixati bug gadget e modificata gestione guidatori aggiuntivi (sono in una lista di clienti separata)}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Wed Jun 19 10:58:53 2013 \\
+\\
+    \emph{Sistemato bottone Annulla in interfaccia noleggio}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Wed Jun 19 11:27:32 2013 \\
+\\
+    \emph{assegnati KeyDownHandler ai campi di login: ora è possibile loggarsi semplicemente premendo invio dopo aver completato i campi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jun 20 12:32:47 2013 \\
+\\
+    \emph{Richiesta auto lato client}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jun 20 23:04:50 2013 \\
+\\
+    \emph{Inserita cartella test con primo abbozzo test su funzione calcola prezzo}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jun 24 18:44:22 2013 \\
+\\
+    \emph{Modificato database, ora dovrebbe funzionare tutto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jun 29 12:07:21 2013 \\
+\\
+    \emph{Implementati i primi due servizi REST jersey, uno di prova che stampa il suo formparam, uno che restituisce le auto in xml}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Sun Jun 30 12:46:42 2013 \\
+\\
+    \emph{url case sensitive, modificato in AgenziaServlet}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Sun Jun 30 13:02:18 2013 \\
+\\
+    \emph{implementato servizio requestAuto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sun Jun 30 13:10:31 2013 \\
+\\
+    \emph{Implementata richiesta trasferimento}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sun Jun 30 13:24:58 2013 \\
+\\
+    \emph{Piccole modifiche al db}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sun Jun 30 13:28:01 2013 \\
+\\
+    \emph{Porta errata}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sun Jun 30 13:34:15 2013 \\
+\\
+    \emph{Messa a posto classe auto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sun Jun 30 14:44:45 2013 \\
+\\
+    \emph{Aggiunta classe trasferimento}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jul 1 12:38:19 2013 \\
+\\
+    \emph{Implementata interfaccia trasferimento (in parte)}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 1 15:56:33 2013 \\
+\\
+    \emph{implementazione trasferimento completata}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jul 2 14:33:37 2013 \\
+\\
+    \emph{Implementati trasferimenti con jersey e noleggio remoto}\\
+\\
+\textbf{Author}: ellfabbri \textless lelenafabbri@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jul 3 07:33:31 2013 \\
+\\
+    \emph{Ripristino parte di test ora funzionante che è stata cancellata}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu Jul 4 15:16:12 2013 \\
+\\
+    \emph{Sistemato noleggio remoto, funziona con guidatore aggiuntivo e optional}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu Jul 4 15:47:24 2013 \\
+\\
+    \emph{eliminata directory bin}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri Jul 5 11:28:05 2013 \\
+\\
+    \emph{Implementazione noleggio remoto funzionante}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri Jul 5 11:55:23 2013 \\
+\\
+    \emph{Ora funziona tutto nuovamente...}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jul 6 14:43:56 2013 \\
+\\
+    \emph{Prova con DAO}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jul 6 15:10:06 2013 \\
+\\
+    \emph{Implementato db con il paradigma DAO}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jul 6 15:25:29 2013 \\
+\\
+    \emph{Ora pare funzionare anche il noleggio remoto..}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jul 6 15:49:40 2013 \\
+\\
+    \emph{Implementata la gestione del "recupero" dei clienti eliminati durante il noleggio}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jul 8 14:18:03 2013 \\
+\\
+    \emph{Migliorata gestione db sia locale che remoto}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 8 18:44:32 2013 \\
+\\
+    \emph{Creazione del message notificator}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 8 18:45:15 2013 \\
+\\
+    \emph{Modifica notificator}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 8 19:39:18 2013 \\
+\\
+    \emph{implementato MessageNotificator con timeout e onclick per la chiusura}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 8 21:27:33 2013 \\
+\\
+    \emph{Migliorata grafica del notificator}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jul 9 10:39:09 2013 \\
+\\
+    \emph{Modificato CSS del tema di default}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jul 9 10:52:20 2013 \\
+\\
+    \emph{Piccole modifiche UI}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jul 9 11:52:42 2013 \\
+\\
+    \emph{Migliore organizzazione dei package}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jul 9 12:43:59 2013 \\
+\\
+    \emph{Aggiunte notifiche}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jul 9 14:19:47 2013 \\
+\\
+    \emph{Modificata struttura package e ri-creato db}\\
+\\
+\textbf{Author}: antonello antonacci \textless antoanto90@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jul 10 10:49:52 2013 \\
+\\
+    \emph{Implementati test}\\
+\\
+\textbf{Author}: antonello antonacci \textless antoanto90@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jul 10 10:57:58 2013 \\
+\\
+    \emph{Modifica Trasferimento per test}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Wed Jul 10 12:07:33 2013 \\
+\\
+    \emph{Risistemata grafica e notifiche}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Wed Jul 10 12:31:07 2013 \\
+\\
+    \emph{Aggiunto tema grafico}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Wed Jul 10 13:47:20 2013 \\
+\\
+    \emph{Aggiunti controlli sui campi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jul 10 17:34:23 2013 \\
+\\
+    \emph{Corretto typo nel package entities}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Wed Jul 10 18:36:31 2013 \\
+\\
+    \emph{Rimosso messagenotificator duplicato, risolti bug di trasferimento e rifornimento}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jul 11 10:04:39 2013 \\
+\\
+    \emph{Piccola modifica al trasferimento}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu Jul 11 11:52:20 2013 \\
+\\
+    \emph{Risolto bug di selezione delle auto da trasferire}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Thu Jul 11 12:41:28 2013 \\
+\\
+    \emph{Riaperto bug e risolto nuovamente: fine}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jul 11 13:32:39 2013 \\
+\\
+    \emph{Commenti UI}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jul 11 13:56:44 2013 \\
+\\
+    \emph{Risolti problemi interfaccia auto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jul 11 14:16:04 2013 \\
+\\
+    \emph{Risolti problemi di interfaccia auto 2}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Thu Jul 11 14:46:03 2013 \\
+\\
+    \emph{Aggiunti commenti interfaccia auto}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri Jul 12 19:12:34 2013 \\
+\\
+    \emph{Rimosse classi inutili, commenti, migliorata gestione di messaggi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Fri Jul 12 19:24:54 2013 \\
+\\
+    \emph{Modificate classi rest (ora sono due) e loro url, messo a posto pulsante annulla nel riepilogobox, commentati i DAO}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Sat Jul 13 11:12:11 2013 \\
+\\
+    \emph{Sistemata infoGrid per i noleggi}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Sat Jul 13 14:18:46 2013 \\
+\\
+    \emph{Risolto problemi seggiolini. Finalmente ho capito come far funzionare il noleggio con gli optional senza dare errori, quindi l'ho 		  rimesso come era prima (con qualche piccola modifica)}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jul 15 15:19:25 2013 \\
+\\
+    \emph{Commentato lato server, rimosso metodo inutile, annotate colonne uniche del db}\\
+\\
+\textbf{Author}: antonello antonacci \textless antoanto90@gmail.com \textgreater
+\textbf{Date}:   Mon Jul 15 15:28:55 2013 \\
+\\
+    \emph{Modifiche ai test}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jul 15 15:51:46 2013 \\
+\\
+    \emph{Indentato e rimosse stampe di debug}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 15 15:54:33 2013 \\
+\\
+    \emph{Rimossa variabile intera non più utile}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 15 17:05:24 2013 \\
+\\
+    \emph{Aggiunti diagrammi delle classi}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 15 18:38:08 2013 \\
+\\
+    \emph{Rinominata classe MessageNotificator in MessageNotifier, sistemato errore di battitura, create costanti dei prezzi degli optional} \\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 15 19:00:36 2013 \\
+\\
+    \emph{Sistemato errore di scrittura}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Mon Jul 15 19:02:04 2013 \\
+\\
+    \emph{Sistemato altro errore di scrittura}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Mon Jul 15 20:18:54 2013 \\
+\\
+    \emph{fixato bug noleggi remoti}\\
+\\
+\textbf{Author}: Michele Corazza \textless ashmikuz@gmail.com \textgreater \\
+\textbf{Date}:   Tue Jul 16 10:55:45 2013 \\
+\\
+    \emph{Risolto bug navigatore, migliorate costanti prezzo}\\
+\\
+\textbf{Author}: Raffaele Lovino \textless raffaele.lovino@studio.unibo.it \textgreater \\
+\textbf{Date}:   Tue Jul 16 13:14:21 2013 \\
+\\
+    \emph{Aggiunti diagrammi}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
